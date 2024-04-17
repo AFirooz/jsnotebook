@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 WORKDIR /app
-
+LABEL nome="jupyter"
 ARG DEBIAN_FRONTEND=noninteractive
 
 # install Python
