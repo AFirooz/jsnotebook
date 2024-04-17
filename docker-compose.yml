@@ -10,4 +10,4 @@ services:
             - 8888:8888
         restart: always
         volumes:
-            - ../../data:/app
+            - ./data:/app
