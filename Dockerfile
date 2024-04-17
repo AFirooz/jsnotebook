@@ -33,5 +33,5 @@ RUN sudo tslab install
 
 # install demo kernel
 RUN sudo curl -fsSL https://deno.land/install.sh | sh
-RUN sudo /home/docker/.deno/bin/deno jupyter --install
+# RUN sudo /home/docker/.deno/bin/deno jupyter --install
 
