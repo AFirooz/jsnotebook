@@ -25,9 +25,10 @@ USER docker
 RUN sudo pip3 install notebook
 
 # install node.js
+# clean the npm cache to ensure a fresh install and reduce image size
+# && sudo npm i --unsafe-perm \ -> will results in an error of not finding /app/package.json
 RUN sudo apt-get install -y node.js npm \
-  && sudo npm cache clean -f \  # clean the npm cache to ensure a fresh install and reduce image size
-  && sudo npm i --unsafe-perm \
+  && sudo npm cache clean -f \ 
   && sudo npm install -g n \
   && sudo n 20.9.0
 

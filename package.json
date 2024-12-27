@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docker-up": "sudo docker-compose --file ./docker-compose.yml up -d",
-    "docker-down": "sudo docker-compose --file ./docker-compose.yml down",
+    "docker-up": "sudo docker compose --file ./docker-compose.yml up -d",
+    "docker-down": "sudo docker compose --file ./docker-compose.yml down",
     "docker-build": "sudo docker build -t jupyter -f ./Dockerfile ./ --platform linux/x86_64"
   },
   "author": "",

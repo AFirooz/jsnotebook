@@ -20,7 +20,7 @@ npm run dokcer-build
 3. Create the docker container
 ```bash
 # Execute the following command 
-docker-compose --file ./docker-compose.yml up -d
+docker compose --file ./docker-compose.yml up -d
 
 # Or use the following npm command 
 npm run docker-up
@@ -31,7 +31,7 @@ npm run docker-up
 5. Destroy the docker container
 ```bash
 # Execute the following command 
-docker-compose --file ./docker-compose.yml down
+docker compose --file ./docker-compose.yml down
 
 # Or use the following npm command 
 npm run docker-down
