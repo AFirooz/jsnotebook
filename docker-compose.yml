@@ -5,10 +5,13 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
-        container_name: jupyter
+        image: jsjupyter
+        container_name: jsjupyter
         command: >
             bash -c "sudo jupyter notebook --ip=* --port=8888 --NotebookApp.token='admin' --allow-root"
         ports:
             - 8888:8888
+        platform: linux/x86_64
+        restart: unless-stopped
         volumes:
             - ./data:/app

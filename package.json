@@ -1,12 +1,12 @@
 {
-  "name": "jupyter-notebook-for-frontend",
+  "name": "js-jupyter-notebook",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docker-up": "docker-compose --file ./docker/compose/docker-compose.yml up -d",
-    "docker-down": "docker-compose --file ./docker/compose/docker-compose.yml down",
-    "docker-build": "docker build -t jupyter -f ./docker/images/Dockerfile ./"
+    "docker-up": "sudo docker-compose --file ./docker-compose.yml up -d",
+    "docker-down": "sudo docker-compose --file ./docker-compose.yml down",
+    "docker-build": "sudo docker build -t jupyter -f ./Dockerfile ./ --platform linux/x86_64"
   },
   "author": "",
   "license": "ISC"
