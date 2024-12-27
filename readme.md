@@ -1,4 +1,4 @@
-# Jupyter Notebook for Frontend developers
+# Jupyter Notebook for JavaScript and TypeScript
 This docker file wraps a Jupyter Notebook with the following cores.
 * JavaScript
 * TypeScript
@@ -11,7 +11,7 @@ It's created for frontend developers who want to learn or practice JavaScript, T
 2. Build the docker image
 ```bash
 # Execute the following command 
-docker build -t jupyter -f ./docker/images/Dockerfile ./
+docker build -t jupyter -f ./Dockerfile ./
 
 # Or use the following npm command 
 npm run dokcer-build
@@ -20,7 +20,7 @@ npm run dokcer-build
 3. Create the docker container
 ```bash
 # Execute the following command 
-docker-compose --file ./docker/compose/docker-compose.yml up -d
+docker-compose --file ./docker-compose.yml up -d
 
 # Or use the following npm command 
 npm run docker-up
@@ -31,7 +31,7 @@ npm run docker-up
 5. Destroy the docker container
 ```bash
 # Execute the following command 
-docker-compose --file ./docker/compose/docker-compose.yml down
+docker-compose --file ./docker-compose.yml down
 
 # Or use the following npm command 
 npm run docker-down
