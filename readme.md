@@ -39,3 +39,6 @@ npm run docker-down
 
 ## Details
 * [Docker Container for Jupyter Notebook with Built-in Node.js, TypeScript, and Deno Cores](https://medium.com/a-layman/docker-container-for-jupyter-notebook-with-built-in-node-js-typescript-and-deno-cores-7106dc89c704)
+
+## Extra
+You can use this [JS Tutor](https://pythontutor.com/) to further understand how javascript code works.
